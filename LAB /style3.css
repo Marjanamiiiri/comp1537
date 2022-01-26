@@ -1,0 +1,18 @@
+
+table, tr, td {
+    border-color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table table tr td{
+    color:#ff6347;
+  }
+h3 {
+    border: 3px solid black ;
+    color: white;
+    background-color: #00b33c;
+}
+td h3 {
+    background-color: pink;
+    color: black;
+}
