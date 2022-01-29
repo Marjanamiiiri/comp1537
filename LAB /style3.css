@@ -16,3 +16,19 @@ td h3 {
     background-color: pink;
     color: black;
 }
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
