@@ -1,14 +1,10 @@
-function f(say){
-  
-  }
-function f(){
-    jQuery('#x').html("new content")
-  }
-  
-  function setup(){
-    jQuery('#p_1').click(f)
-
-    jQuery(#img_cat).click(say)
-  }
-  
-  jQuery(document).ready(setup)
+function calculate_area(){
+  console.log("calculate_area () got called")
+  r = parseInt(jQuery('#x').val());
+  jQuery("#p1").html(r*r*22/7)
+}
+function setup() {
+  console.log("setup () got called")
+  jQuery("#calc").click(calculate_area)
+}
+jQuery(document).ready(setup)
