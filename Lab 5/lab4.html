@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Lab 5</title>
+        <title>Lab 4</title>
         <style>
            * {
              box-sizing: border-box;
@@ -20,16 +20,17 @@
                 padding-right: 16px;
                 display: block;
             }
-            .left_column {
+            #left_column {
                 width: 75%;
                 float: left;
                 margin-bottom: 20px;
                 
             }
-            .right_column {
+            #right_column {
                 width: 25%;
                 float: left;
                 margin-bottom: 20px;
+
             }
             footer {
                 color: black;
@@ -37,15 +38,15 @@
                 clear: both;
                 
             }
-            .nav {
+            #nav {
                 background-color: #333;
                 overflow: hidden;
             }
-            .nav a:hover{
-                background-color: #f1f1f1;
-                color: black;
+            #nav a:hover{
+                background-color: #f2f2f2;
+                color: #333;
             }
-            .nav a{
+            #nav a{
                 color: #f2f2f2;
                 text-decoration: none;
                 display: block;
@@ -54,13 +55,8 @@
 
             }
             .card {
-                margin-top: 10px;
                 background-color: #a2b9bc;
-                padding: 20px;
-            }
-            .card2 {
-                background-color: #a2b9bc;
-                margin-top: 10px;
+                margin-top: 20px;
                 padding: 20px;
 
             }
@@ -90,15 +86,15 @@
         <h1>My Website</h1>
         <p>Should be responsive</p>
         </header>
-        <div class="nav">
+        <div id="nav">
         <a href="a">Link</a>
         <a href="a">Link</a>
         <a href="a">Link</a>
-        <a href="a" >Link</a>
+        <a href="a" style="float: right;">Link</a>
        </div>
 
-        <div class="left_column">
-             <div class="card">
+       <div id="left_column">
+           <div class="card">
             <h2>Title Heading</h2>
             <h5>Title Description</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab omnis. Accusantium omnis in magni voluptatum ipsa quae maxime minus. Maxime, aspernatur ratione. Pariatur similique ad ipsa vero iure ex?</p>
@@ -110,9 +106,8 @@
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab omnis. Accusantium omnis in magni voluptatum ipsa quae maxime minus. Maxime, aspernatur ratione. Pariatur similique ad ipsa vero iure ex? </p>
            </div>
         </div>
-
-        <div class="right_column">
-            <div class="card2">
+            <div id="right_column">
+                <div class="card" style="margin-left: 10px;">
             <h2>Title Heading</h2>
             <h5>Title Description</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab omnis. Accusantium omnis in magni voluptatum ipsa quae maxime minus. Maxime, aspernatur ratione. Pariatur similique ad ipsa vero iure ex?</p>
