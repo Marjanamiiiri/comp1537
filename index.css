@@ -2,16 +2,15 @@ body {
     background-image: url("https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Gill Sans", sans-serif;
   }
-  h1{
+  h2{
     text-align: center;
     font-size: 40px;
     color: rgba(245, 255, 250, 0.616);
-    background-image: url("https://images.unsplash.com/photo-1553283216-e2ddef24b1f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-  }
-  li {
-    color: rgb(103, 206, 111);
-  }
+    margin-bottom: 0;
+    font-family: Brush Script MT;
+     }
   a {
     background:
       linear-gradient(
@@ -48,4 +47,53 @@ body {
     color: rgba(103, 206, 111, 0.733);
     opacity: 0.7;
   }
+  .dropbtn {
+    background-color: rgba(52, 85, 55, 0.7);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
   
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1ab;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #366937;}
+
+  header{
+    background-color: rgba(0, 0, 0, 0.2);
+
+  }
+
+  main {
+    height: 75%;
+  }
