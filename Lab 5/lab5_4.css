@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+#nav {
+    background-color: black;
+    overflow: hidden;
+    
+
+}
+#nav a {
+    display: block;
+    text-decoration: none;
+    float: left;
+    color: white;
+    background-color: black;
+    padding: 14px 16px;
+}
+main {
+    padding: 10px;
+}
+.img-container {
+    width: 33.3%;
+    float: right;
+    padding: 10px;
+}
+img{
+    border-radius: 5px;
+}
+#center {
+    margin: 0 auto;
+    width: 90%;
+}
+.clearfix {
+    overflow: hidden;
+}
+.clearfix ::after {
+    clear: both;
+}
+@media screen and (max-width: 550px) {
+    .img-container {
+        width: 100%;
+        float: none;
+        padding: 10px 0px 10px 0px;
+    }
+    #center{
+        width: 100%;
+    }
+    nav a{
+        width: 100%;
+        float: none !important;
+    }
+}
+footer {
+    text-align: center;
+}
