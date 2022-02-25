@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./lab6_a.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: monospace;
+        }
+
+        .cal {
+            background-color: rgb(204, 204, 204);
+            border: 2px black solid;
+            border-radius: 25px;
+            padding: 20px;
+            margin: 15px;
+            width: 300px;
+            box-shadow: 12px 6px 8px rgb(138, 138, 138);
+        }
+
+        .box1 {
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            border-radius: 5px;
+            padding: 1px;
+            height: 40px;
+        }
+
+        .box2 {
+            margin: 15px 0;
+        }
+
+        .box2 label {
+            display: inline-block;
+            font-size: 16px;
+            text-align: right;
+            width: 60%;
+        }
+
+        .box2 input {
+            font-size: 18px;
+            width: 3em;
+            text-align: center;
+        }
+
+        #buttons {
+            margin: 20px 0 20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .box3 {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px 0 20px;
+            font-size: 16px;
+            box-shadow: inset 3px 2px 3px rgb(138, 138, 138);
+
+        }
+
+        .box4 {
+            border-radius: 10px;
+            background-color: rgb(245, 245, 245);
+            overflow: hidden;
+            height: fit-content;
+            border: 2px solid rgb(245, 245, 245);
+        }
+
+        #history {
+            height: 250px;
+            overflow: auto;
+        }
+
+        #history * {
+            padding: 4.5px;
+            font-size: 13px;
+        }
+
+        .blue {
+            background-color: rgb(240, 127, 255);
+            ;
+        }
+
+        .a {
+            background-color: rgb(168, 252, 224);
+        }
+
+        .y {
+            background-color: rgb(255, 235, 181);
+        }
+
+        .x {
+            background-color: rgb(255, 210, 127);
+        }
+
+        .c {
+            background-color: mintcream;
+        }
+
+        .d {
+            background-color: olive;
+        }
+
+        .operator {
+            font-size: 20px;
+            font-weight: bold;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cal">
+        <div class="box1">
+            <h1>Calculator!</h1>
+        </div>
+        <div class="box2">
+            <label for="num2">First opreand</label>
+            <input type="text" id="num1" placeholder="0"></input>
+        </div>
+        <div class="box2">
+            <label for="num2">Second opreand</label>
+            <input type="text" id="num2" placeholder="0"></input><br><br>
+        </div>
+        <div id="buttons">
+            <input type="submit" value="+" id="add" style="background-color: rgb(168, 252, 224);" class="operator">
+            <input type="submit" value="-" id="sub" style="background-color: rgb(255, 235, 181);"class="operator">
+            <input type="submit" value="*" id="mul" style="background-color: rgb(255, 210, 127);"class="operator">
+            <input type="submit" value="/" id="dev" style="background-color: rgb(240, 127, 255);"class="operator">
+            <input type="submit" value="^" id="time" style="background-color: rgb(240, 127, 255);"class="operator">
+            <input type="submit" value="%" id="per" style="background-color: rgb(240, 127, 255);"class="operator">
+        </div>
+        <p id="p1"></p>
+        <br>
+
+        <div class="box4">
+            <h1>History</h1>
+
+            <div id="history"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
