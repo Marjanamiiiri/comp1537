@@ -4,7 +4,7 @@ function add_operation() {
     num2 = parseInt(jQuery("#num2").val());
     jQuery('#p1').html(
 
-        "Result: " +
+        "Result of " +
         num1 +
         " + " +
         num2 +
@@ -31,7 +31,7 @@ function sub_operation() {
     num1 = parseInt(jQuery("#num1").val());
     num2 = parseInt(jQuery("#num2").val());
     jQuery('#p1').html(
-        "Result: " +
+        "Result of " +
         num1 +
         " - " +
         num2 +
@@ -57,7 +57,7 @@ function multiply_operation() {
     num1 = parseInt(jQuery("#num1").val());
     num2 = parseInt(jQuery("#num2").val());
     jQuery('#p1').html(
-        "Result: " +
+        "Result of " +
         num1 +
         " * " +
         num2 +
@@ -85,7 +85,7 @@ function dev_operation() {
     num2 = parseInt(jQuery("#num2").val());
     jQuery('#p1').html(
 
-        "Result: " +
+        "Result of " +
         num1 +
         " * " +
         num2 +
@@ -113,7 +113,7 @@ function time_operation() {
     num2 = parseInt(jQuery("#num2").val());
     jQuery('#p1').html(
 
-        "Result: " +
+        "Result of " +
         num1 +
         " ^ " +
         num2 +

@@ -5,7 +5,7 @@
 }
 
 .cal {
-    background-color: rgb(204, 204, 204);
+    background-color: #044855;
     border: 2px black solid;
     border-radius: 25px;
     padding: 20px;
@@ -80,28 +80,28 @@
 }
 
 .blue {
-    background-color: rgb(255, 0, 0);
+    background-color: #e60000;
     ;
 }
 
 .a {
-    background-color: rgb(168, 252, 224);
+    background-color: #e6ccb3;
 }
 
 .y {
-    background-color: rgb(255, 235, 181);
+    background-color: #cc9766;
 }
 
 .x {
-    background-color: rgb(255, 210, 127);
+    background-color: #800000;
 }
 
 .c {
-    background-color: olive;
+    background-color: #ffb3b3;
 }
 
 .d {
-    background-color: mintcream;
+    background-color: #ff4d4d;;
 }
 
 .operator {
