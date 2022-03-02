@@ -1,3 +1,10 @@
+deleteButton = "<button class = 'delButton'> Delete </button>"
+
+function hide_(){
+    console.log("hide() calleds")
+    $(this).parent().remove();
+}
+
 function add_operation() {
     console.log("setup () got called")
     num1 = parseInt(jQuery("#num1").val());
@@ -15,12 +22,13 @@ function add_operation() {
         " + " +
         num2 +
         " = " +
-        (num1 + num2);
+        (num1 + num2 );
 
     old = jQuery('#history').html()
     jQuery('#history').html(old +
-        "<div class='a'>" +
+        "<div class='add'>" +
         hello_ +
+        deleteButton +
         "</div>"
     );
 
@@ -45,7 +53,7 @@ function sub_operation() {
         (num1 - num2);
     old = jQuery('#history').html()
     jQuery('#history').html(old +
-        "<div class='y'>" +
+        "<div class='sub'>" +
         hello_ +
         deleteButton +
         "</div>"
@@ -73,8 +81,9 @@ function multiply_operation() {
 
     old = jQuery('#history').html()
     jQuery('#history').html(old +
-        "<div class='x'>" +
-        hello_ + 
+        "<div class='times'>" +
+        hello_ +
+        deleteButton +
         "</div>"
     );
 
@@ -101,7 +110,7 @@ function dev_operation() {
 
     old = jQuery('#history').html()
     jQuery('#history').html(old +
-        "<div class='blue'>" +
+        "<div class='dev'>" +
         hello_ +
         deleteButton +
         "</div>"
@@ -109,61 +118,8 @@ function dev_operation() {
 
 }
 
-function time_operation() {
-    console.log("setup () got called")
-    num1 = parseInt(jQuery("#num1").val());
-    num2 = parseInt(jQuery("#num2").val());
-    jQuery('#p1').html(
 
-        "Result of " +
-        num1 +
-        " ^ " +
-        num2 +
-        " = " +
-        (num1 ** num2))
 
-    hello_ =
-        num1 +
-        " ^ " +
-        num2 +
-        " = " +
-        (num1 ** num2);
-
-    old = jQuery('#history').html()
-    jQuery('#history').html(old +
-        "<div class='d'>" +
-        hello_ +
-        "</div>"
-    );
-
-}
-
-function per_operation() {
-    console.log("setup () got called")
-    num1 = parseInt(jQuery("#num1").val());
-    num2 = parseInt(jQuery("#num2").val());
-    jQuery('#p1').html(
-        "Result: " +
-        num1 +
-        " % " +
-        num2 +
-        " = " +
-        (num1 % num2))
-    hello_ =
-        num1 +
-        " % " +
-        num2 +
-        " = " +
-        (num1 % num2);
-
-    old = jQuery('#history').html()
-    jQuery('#history').html(old +
-        "<div class='c'>" +
-        hello_ +
-        "</div>"
-    );
-
-}
 
 function dis() {
     console.log("setup () got called")
@@ -180,13 +136,13 @@ function increace() {
 
 function setup() {
     console.log("setup () got called")
-    jQuery("#add").click(add_operation)
-    jQuery("#sub").click(sub_operation)
-    jQuery("#mul").click(multiply_operation)
-    jQuery("#dev").click(dev_operation)
-    $("#per").click(per_operation)
-    $("#time").click(time_operation)
+    $("#add").click(add_operation)
+    $("#sub").click(sub_operation)
+    $("#mul").click(multiply_operation)
+    $("#dev").click(dev_operation)
     $("#in").click(increace)
     $("#de").click(dis)
+    $("body").on("click", ".delButton", hide_)
 }
+
 jQuery(document).ready(setup);
