@@ -23,8 +23,8 @@ function call_ajax(){
 function display_back_drop() {
     w = $(this).attr("id");
     console.log('display called')
-    console.log(`<img src="https://image.tmdb.org/t/p/original${w}" width="100"%>`);
-    $("#right_div").append(`<div><img src="https://image.tmdb.org/t/p/w300/${w}"></div>`)
+    console.log(`<img src="https://image.tmdb.org/t/p/original${w}" width="100%">`);
+    $("#right_div").append(`<div><img src="https://image.tmdb.org/t/p/w300/${w} " width="100%"></div>`)
 
 
 }
@@ -33,7 +33,7 @@ function setup(){
     console.log("test")
     $('#movie_info').click(call_ajax);
 
-    $('#body').on('click', '.backdrop_button' ,display_back_drop)
+    $('body').on('click', '.backdrop_button' ,display_back_drop)
 
 }
 $(document).ready(setup)
