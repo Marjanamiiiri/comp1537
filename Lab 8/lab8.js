@@ -5,7 +5,7 @@ function procces_response(data){
         $('#results').append('Description: ' + data.results[i].overview + '</br>'+ '</br>');
         x = data.results[i].poster_path
 
-        image_box = `<img src='https://image.tmdb.org/t/p/w500/${x}'>`
+        image_box = `<img src='https://image.tmdb.org/t/p/w500/${x}' width="100"%>`
         $('#results').append(image_box + '</br>'+ '</br>');
         z = `<button id="${data.results[i].backdrop_path} "class="backdrop_button"> backdrop image!</button>`
         $("#results").append(z + "<br>");
@@ -24,7 +24,7 @@ function display_back_drop() {
     w = $(this).attr("id");
     console.log('display called')
     console.log(`<img src="https://image.tmdb.org/t/p/original${w}" width="100"%>`);
-    $("#right").append(`<div><img src="https://image.tmdb.org/t/p/w300/${w}"></div>`)
+    $("#right_div").append(`<div><img src="https://image.tmdb.org/t/p/w300/${w}"></div>`)
 
 
 }
