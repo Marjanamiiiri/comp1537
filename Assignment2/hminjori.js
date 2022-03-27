@@ -3,6 +3,25 @@ var num_of_pages = 1;
 var page_size = 3;
 var results_array = null;
 
+function procces_response(data) {
+  $(".box1").children().remove();
+  results_array = data;
+
+  for (
+    let i = 0 + (current_page - 1) * page_size; i < current_page * page_size; i++
+  ) {
+    
+    $(".box1").append("<h4><span>" +(i + 1) +"# </span>" + "</h4>");
+    $('.box1').append('<b>Title: </b><span>' + results_array.results[i].title+ '</span>');
+    $(".box1").append("<p> <b>Description:</b> " + results_array.results[i].overview + "</p>");
+    $(".box1").append("<img src=" +`http://image.tmdb.org/t/p/original/${results_array.results[i].poster_path}` +"></img></br>");
+    $(".box1").append("<button class='backdrop' id='" + results_array.results[i].backdrop_path + "'>backdrop image!</button>");
+    $(".box1").append("<hr>");
+  }
+
+  paginate_menu();
+}
+
 $(".button-bar").hide();
 $("body").on("click", ".backdrop", function () {
   backdrop_id = $(this).attr("id");
@@ -56,24 +75,6 @@ $("body").on("click", ".page-button", function () {
   }
 });
 
-function procces_response(data) {
-  $(".box1").children().remove();
-  results_array = data;
-
-  for (
-    let i = 0 + (current_page - 1) * page_size; i < current_page * page_size; i++
-  ) {
-    
-    $(".box1").append("<h4><span>" +(i + 1) +"# </span>" + "</h4>");
-    $('.box1').append('<b>Title: </b><span>' + results_array.results[i].title+ '</span>');
-    $(".box1").append("<p> <b>Description:</b> " + results_array.results[i].overview + "</p>");
-    $(".box1").append("<img src=" +`http://image.tmdb.org/t/p/original/${results_array.results[i].poster_path}` +"></img></br>");
-    $(".box1").append("<button class='backdrop' id='" + results_array.results[i].backdrop_path + "'>backdrop image!</button>");
-    $(".box1").append("<hr>");
-  }
-
-  paginate_menu();
-}
 
 $("#movie-info").click(function () {
   search = $("#movies").val();
