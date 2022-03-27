@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Assignment 2 </title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/Assignment2/a2.js"></script>
+  <link rel="stylesheet" href="a2.css">
+</head>
+
+<header>
+  Page Size:
+
+  <select name="page_size" id="page_size">
+    <option value="3">3</option>
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+  </select>
+
+  <br>
+  <button id="first" style="margin-bottom: 2px;"> First </button>
+  <button id="prv" style="margin-bottom: 2px;"> ← Prev </button>
+
+  <div id="numbered_buttons_id"></div>
+  
+  <button id="next"  style="margin-top: 2px;"> Next → </button>
+  <button id="last" style="margin-top: 2px;"> Last </button>
+
+</header>
+
+<body id="list_">
+  <article style="width: 50%; float: left;">
+  </br>
+    Search TMDB by title
+    <input type="text" id="movie_name" value="Avengers" />
+    <button id="movie_info">Search</button>
+  
+    
+    <br>
+    <div id="plot" style="width:50%; float:left">
+
+
+    </div>
+
+    </div>
+    <br>
+    <div id="results">
+
+    </div>
+
+  </article>
+  <article style="width: 50%; float: left;" id="right_div">
+
+  </article>
+
+
+
+</body>
+
+</html>

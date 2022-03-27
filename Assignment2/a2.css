@@ -1,0 +1,137 @@
+body {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border-top: 10px solid black;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: .375em;
+}
+button {
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  align-items: center;
+  appearance: none;
+  background-color: #B0B0B0;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+button:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+button:focus {
+  border-color: #60686E;
+  outline: 0;
+}
+
+button:hover {
+  border-color: #60686E;
+}
+
+button:focus:not(:active) {
+  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+select {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+    align-items: center;
+    appearance: none;
+    background-color: #99ABB9;
+    border: 1px solid #dbdbdb;
+    border-radius: .375em;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #363636;
+    cursor: pointer;
+    display: inline-flex;
+    height: 2.5em;
+    justify-content: center;
+    line-height: 1.5;
+    padding: calc(.5em - 1px) 1em;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+select:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+select:focus {
+  border-color: #485fc7;
+  outline: 0;
+}
+
+select:hover {
+  border-color: #b5b5b5;
+}
+
+select:focus:not(:active) {
+  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #4a4a4a;
+}
+  
+   
+.box1 {
+  float: left;
+  width: 50%;
+}
+
+.box2 {
+  float: left;
+  width: 50%;
+}
+
+.box1 img {
+  width: 50%;
+}
+
+.button-bar div {
+  display: inline;
+}
