@@ -137,6 +137,31 @@ function x(){
     console.log("worked")
     $("#right").text("<br>625281623ac52a934bef478a </ul>Raleigh 2005-05-03T07:57:00Z apple sugar 421 m 2")
 }
+function x(){
+    console.log("worked")
+    $("#right").text("<br>625281623ac52a934bef478a </ul>Raleigh 2005-05-03T07:57:00Z apple sugar 421 m 2")
+}
+
+function x(){
+    console.log("worked")
+    $("#right").text("<br>625281623ac52a934bef478a </ul>Raleigh 2005-05-03T07:57:00Z apple sugar 421 m 2")
+}
+
+function x(){
+    console.log("worked")
+    $("#right").text("<br>625281623ac52a934bef478a </ul>Raleigh 2005-05-03T07:57:00Z apple sugar 421 m 2")
+}
+
+function x(){
+    console.log("worked")
+    $("#right").text("<br>625281623ac52a934bef478a </ul>Raleigh 2005-05-03T07:57:00Z apple sugar 421 m 2")
+}
+
+function x(){
+    console.log("worked")
+    $("#right").text("<br>625281623ac52a934bef478a </ul>Raleigh 2005-05-03T07:57:00Z apple sugar 421 m 2")
+}
+
 
 function setup() {
     $("#findUnicornByWeight").click(findByWeight)
@@ -145,6 +170,17 @@ function setup() {
     $("#filter").click(filter_f)
     $("#filters").hide()
     $("#Raleigh").click(x)
+    $("#Dunx").click(x)
+    $("#Solnara").click(x)
+    $("#Nimue").click(x)
+    $("#Horny").click(x)
+    $("#Unicorm").click(x)
+    $("#Ayna").click(x)
+    $("#Aurora").click(x)
+    $("#Kenny").click(x)
+    $("#Rooooooodles").click(x)
+    $("#Leia").click(x)
+    $("#Pilot").click(x)
 }
 
 $(document).ready(setup)
