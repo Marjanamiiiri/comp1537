@@ -1,0 +1,16 @@
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid;
+  }
+  div#left {
+    width: 30%;
+    float: left;
+  }
+
+  div#right {
+    width: 70%;
+    float: left;
+  }
+  #box {
+    display: none;
+  }
